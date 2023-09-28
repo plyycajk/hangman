@@ -54,8 +54,9 @@ def play_game(word_list):
             print("You lost!")
         elif game.remaining_letters() > 0:
             game.ask_for_input()
-            continue
         else:
             print("Congratulations. You won the game!")
 
-play_game(["apple","banana","pear"])
+if __name__ == '__main__':
+    word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
+    play_game(word_list)
