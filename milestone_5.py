@@ -53,6 +53,7 @@ def play_game(word_list):
             game.ask_for_input()
         else:
             print("Congratulations. You won the game!")
+            print(f"The word was '{game.word}'")
             break
 
 if __name__ == '__main__':
