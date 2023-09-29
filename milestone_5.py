@@ -15,23 +15,17 @@ class Hangman:
     def check_guess(self, guess):
         self.guess = guess.lower()
         if self.guess in self.word:
+            self.num_letters = self.num_letters - 1
             print(f"Good guess {self.guess} is in the word!")
             for count, letter in enumerate(self.word):
                 if letter == self.guess:
                     self.word_guessed[count] = self.guess
                 else:
                     continue
-            self.num_letters = self.num_letters - 1
         else:
             self.num_lives = self.num_lives - 1
             print(f"Sorry, {self.guess} is not in the word")
             print(f"You have {self.num_lives} lives left")
-    
-    def remaining_lives(self):
-        return self.num_lives
-    
-    def remaining_letters(self):
-        return self.num_letters
                  
     def ask_for_input(self):
         while True:
@@ -43,19 +37,20 @@ class Hangman:
             else:
                 self.list_of_guesses.append(guess)
                 self.check_guess(guess)
-
-#bug "you lost not being triggered on 0 or fewer lives remaining"
+                break
 
 def play_game(word_list):
     num_lives = 5
     game = Hangman(word_list, num_lives)
     while True:
-        if game.remaining_lives() == 0:
+        if game.num_lives == 0:
             print("You lost!")
-        elif game.remaining_letters() > 0:
+            break
+        elif game.num_letters > 0:
             game.ask_for_input()
         else:
             print("Congratulations. You won the game!")
+            break
 
 if __name__ == '__main__':
     word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
