@@ -40,6 +40,9 @@ class Hangman:
                 break
 
 def play_game(word_list):
+
+    """Runs a game of hangman based on word_list parameter"""
+
     num_lives = 5
     game = Hangman(word_list, num_lives)
     while True:
