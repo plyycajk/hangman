@@ -28,6 +28,7 @@ class Hangman:
             print(f"You have {self.num_lives} lives left")
                  
     def ask_for_input(self):
+        print(' '.join(self.word_guessed))
         while True:
             guess = str(input("Please guess a letter"))
             if not guess.isalpha() or len(guess) > 1:
@@ -53,6 +54,7 @@ def play_game(word_list):
             game.ask_for_input()
         else:
             print("Congratulations. You won the game!")
+            print(f"The word was {game.word}!")
             break
 
 if __name__ == '__main__':

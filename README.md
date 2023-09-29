@@ -29,3 +29,6 @@ Defines the Hangman class and associated methods
 
 ## milestone_5.py
 Finalised Hangman class and methods. Introduces the play_game() function to run a full game
+
+## post_project_ideas.py
+Added some features that were not specified in the project instructions post submission to offer an alternative experience. This version of the game displays the blank spaces in the letter when the user is prompted to provide input - this indicates where characters appear in the word.
