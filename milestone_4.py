@@ -1,6 +1,9 @@
 import random
 
 class Hangman:
+
+    """Enables the user to play hangman by guessing which letters are contained in a randomly selected word"""
+
     def __init__(self, word_list, num_lives = 5):
         self.list_of_guesses = []
         self.word_list = word_list
@@ -35,6 +38,3 @@ class Hangman:
             else:
                 self.list_of_guesses.append(guess)
                 self.check_guess(guess)
-
-my_test = Hangman(["Pineapple", 6])
-my_test.ask_for_input()

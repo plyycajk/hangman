@@ -15,14 +15,14 @@ def check_guess(letter_guess):
     
 
 def ask_for_input():
+    #asks for guess from user, checks if input is a single alphabetical character before calling check_guess function
     letter_guess = input("Please, guess a letter")
-    #asks for guess from user, checks if input is a single alphabetical character
     while letter_guess.isalpha() == False or len(letter_guess) > 1:
         print("Invalid letter. Please, enter a single alphabetical character.")
         letter_guess = input("Please, guess a letter")
     else:
         check_guess(letter_guess)
 
-ask_for_input()
+
     
     
