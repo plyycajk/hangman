@@ -44,12 +44,12 @@ class Hangman:
             print(f"You have {self.num_lives} lives left")
                  
     def ask_for_input(self):
-            """
-            Asks for a guess when playing the hangman game
+        """
+        Asks for a guess when playing the hangman game
             
-            Returns:
-                str: letter guessed if True; otherwise asks for input again
-            """
+        Returns:
+            str: letter guessed if True; otherwise asks for input again
+        """
         print(' '.join(self.word_guessed))
         while True:
             guess = str(input("Please guess a letter")).lower()
