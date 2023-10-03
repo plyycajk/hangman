@@ -23,7 +23,7 @@ I learnt a lot more about loops in practise as I didn't insert break statements 
 
 I developed better strategies for debugging code - I was able to identify why the game was finishing too early when words with characters that appear multiple times (such as 'a' and 'b' in banana) lead to the game being won prematurely. My improved debugging approach meant I could identify (through print statements) that remaining unique letters was being reduced multiple times in the loop rather than just the single time required.
 
-I practised my use of repositories in order update the manuy versions of code developed along the way!
+I practised my use of repositories in order update the many versions of code developed along the way!
 
 ## Installation Instructions
 
