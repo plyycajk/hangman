@@ -15,6 +15,10 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it.
 
+The below gif shows the game in action
+
+![Hangman Game](hangman/Images/Hangman.gif)
+
 ## What I learned in this project
 
 I learnt how to use classes to organise code into efficient blocks - rather than have a sprawling and difficiult-to-navigate collection of code. This is not something that I have come across before and I was implementing learning from lessons straight into the project.
@@ -31,7 +35,7 @@ This file can be run directly from the terminal by calling the milestone_5.py fi
 
 ## Usage instructions
 
-This file can be run directly from the terminal by calling the milestone_5.py file with python
+This file can be run directly from the terminal by calling the milestone_5.py or post_project_ideas.py files with python
 
 ## Files
 
