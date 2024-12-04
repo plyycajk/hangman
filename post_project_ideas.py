@@ -30,7 +30,7 @@ class Hangman:
     def ask_for_input(self):
         print(' '.join(self.word_guessed))
         while True:
-            guess = str(input("Please guess a letter"))
+            guess = str(input("Please guess a letter")).lower()
             if not guess.isalpha() or len(guess) > 1:
                 print("Invalid letter. Please, enter a single alphabetical character")    
             elif guess in self.list_of_guesses:
